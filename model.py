@@ -62,7 +62,7 @@ class Comment(db.Model):
     news_id = db.Column(UUID(as_uuid=True), db.ForeignKey('news.news_id'), nullable=False)
     comment_text = db.Column(db.Text)
 
-    user = db.relationship('User', backref='users')
+    commenter_user = db.relationship('User', backref='commenter_users')
     news = db.relationship('News', backref='news')
 
     def __repr__(self):
@@ -72,7 +72,7 @@ class Comment(db.Model):
         return {
             'comment_id': self.comment_id,
             'user_id': self.user_id,
-            'user_name': self.user.user_name,
+            'user_name': self.commenter_user.user_name,
             'comment_text': self.comment_text
         }
 

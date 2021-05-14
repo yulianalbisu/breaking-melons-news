@@ -59,10 +59,8 @@ def get_comment_by_id(comment_id):
 def get_comments_by_news_id(news_id):
     return News.query.filter(news_id==news_id ).order_by(News.date_post.desc()).all()
 
-def create_comment(user_id, news_id, comment_text):
-    user = User.query.get(user_id)
-    news = News.query.get(news_id)
-    comment = Comment(user=user,
+def create_comment(user, news, comment_text):
+    comment = Comment(commenter_user=user,
                     news=news,
                     comment_text=comment_text)
     db.session.add(comment)

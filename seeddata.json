@@ -1,0 +1,49 @@
+{
+    "users": [
+        {
+            "user_name": "Mel Melitpolski",
+            "email": "mel@ubermelon.com",
+            "user_role": "admin",
+            "password": "mel123"
+        },
+        {
+            "user_name": "Mandi Moose",
+            "email": "mandi@moose.com",
+            "user_role": "commenter",
+            "password": "mand1"
+        }
+    ],
+    "categories": [
+        {
+            "category_type": "recipe",
+            "description": "Delicious melon meals."
+        },
+        {
+            "category_type": "financial",
+            "description": "Financial melon news."
+        }
+    ],
+    "news": [
+        {
+            "title": "Top May-lon Recipes",
+            "summary": "Our favorite tasty treats for May.",
+            "article_text": "placeholder",
+            "external_link": "",
+            "picture_link": "",
+            "date_post": [2021, 5, 1]
+        },
+        {
+            "title": "Melon stocks falling, should you invest?",
+            "summary": "Advice from our top finiancial expert",
+            "article_text": "placeholder",
+            "external_link": "",
+            "picture_link": "",
+            "date_post": [2021, 5, 5]
+        }
+    ],
+    "comments": [
+        {
+            "comment_text": "placeholder"
+        }
+    ]
+}
