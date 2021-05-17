@@ -25,7 +25,7 @@ def get_news():
     news_data = crud.get_news()
     news_list = []
     for news in news_data:
-        news_list.add(news.to_dict())
+        news_list.append(news.to_dict())
     return jsonify(news_list)
 
 
