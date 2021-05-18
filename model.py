@@ -9,9 +9,9 @@ class User(db.Model):
     __tablename__ = 'users'
 
     user_id = db.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    user_name = db.Column(db.String, unique=True, nullable=False)
+    user_name = db.Column(db.String, nullable=False)
     email = db.Column(db.String, unique=True, nullable=False)
-    user_role = db.Column(db.String, unique=True, nullable=False)
+    user_role = db.Column(db.String, nullable=False)
     password = db.Column(db.String, nullable=False)
 
     def __repr__(self):

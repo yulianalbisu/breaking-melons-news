@@ -7,6 +7,12 @@
             "password": "mel123"
         },
         {
+            "user_name": "Meli Mellen",
+            "email": "meli@ubermelon.com",
+            "user_role": "admin",
+            "password": "meli987"
+        },
+        {
             "user_name": "Mandi Moose",
             "email": "mandi@moose.com",
             "user_role": "commenter",
@@ -21,6 +27,14 @@
         {
             "category_type": "financial",
             "description": "Financial melon news."
+        },
+        {
+            "category_type": "science",
+            "description": "Science about melons."
+        },
+        {
+            "category_type": "lifestyle",
+            "description": "Living the melon life."
         }
     ],
     "news": [
@@ -29,21 +43,107 @@
             "summary": "Our favorite tasty treats for May.",
             "article_text": "placeholder",
             "external_link": "",
-            "picture_link": "",
-            "date_post": [2021, 5, 1]
+            "picture_link": "https://images.pexels.com/photos/2531196/pexels-photo-2531196.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "date_post": [2021, 5, 6],
+            "category_type": "recipe",
+            "email": "mel@ubermelon.com"
         },
         {
             "title": "Melon stocks falling, should you invest?",
-            "summary": "Advice from our top finiancial expert",
+            "summary": "Get tips on the top melon stocks you should buy now.",
             "article_text": "placeholder",
             "external_link": "",
-            "picture_link": "",
-            "date_post": [2021, 5, 5]
+            "picture_link": "https://images.pexels.com/photos/241544/pexels-photo-241544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "date_post": [2021, 5, 7],
+            "category_type": "financial",
+            "email": "mel@ubermelon.com"
+        },
+        {
+            "title": "Love Is Where the Melon Is",
+            "summary": "One family keeps up the melon farming tradition through multiple generations.",
+            "article_text": "placeholder",
+            "external_link": "",
+            "picture_link": "https://images.pexels.com/photos/4397727/pexels-photo-4397727.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "date_post": [2021, 5, 10],
+            "category_type": "lifestyle",
+            "email": "mel@ubermelon.com"
+        },
+        {
+            "title": "Marvelous Melons",
+            "summary": "Learn about these marvelous new melon varieties melonologists are creating.",
+            "article_text": "placeholder",
+            "external_link": "",
+            "picture_link": "https://images.pexels.com/photos/1108716/pexels-photo-1108716.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "date_post": [2021, 5, 11],
+            "category_type": "science",
+            "email": "meli@ubermelon.com"
+        },
+        {
+            "title": "Cantastrophe",
+            "summary": "Will cantaloupe crops recover the sudden appearance of cantaloupe critters?",
+            "article_text": "placeholder",
+            "external_link": "",
+            "picture_link": "https://images.pexels.com/photos/4397727/pexels-photo-4397727.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "date_post": [2021, 5, 12],
+            "category_type": "science",
+            "email": "meli@ubermelon.com"
+        },
+        {
+            "title": "Can melons cure seasonal allergies?",
+            "summary": "New science sheds some new light on an age old problem.",
+            "article_text": "placeholder",
+            "external_link": "",
+            "picture_link": "https://images.pexels.com/photos/4031632/pexels-photo-4031632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "date_post": [2021, 5, 13],
+            "category_type": "science",
+            "email": "meli@ubermelon.com"
+        },
+        {
+            "title": "Melon Fashion: Taking Inspiring from Nature",
+            "summary": "One designer explains how her latest line has colors and shapes inspired by melons.",
+            "article_text": "placeholder",
+            "external_link": "https://www.missfoxshop.com/products/1950s-dress-watermelon-print-patchwork-slip-dress?currency=USD&variant=28644088643661&utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping",
+            "picture_link": "https://cdn.shopify.com/s/files/1/0238/0929/4413/products/KK-SY01-Red_01_778f6d36-ecab-4515-a30d-24dbd3bbcc9c_1024x1024.jpg?v=1571716653",
+            "date_post": [2021, 5, 14],
+            "category_type": "lifestyle",
+            "email": "meli@ubermelon.com"
+        },
+        {
+            "title": "Melon...Salad?!",
+            "summary": "This weird recipe is making the delicious rounds!",
+            "article_text": "placeholder",
+            "external_link": "",
+            "picture_link": "https://artofnaturalliving.com/wp-content/uploads/2019/08/Watermelon_Feta_Salad_06.jpg",
+            "date_post": [2021, 5, 15],
+            "category_type": "recipe",
+            "email": "meli@ubermelon.com"
+        },
+        {
+            "title": "Melon Monday",
+            "summary": "Our readers write in with their favorite melon tips and tricks.",
+            "article_text": "placeholder",
+            "external_link": "",
+            "picture_link": "https://images.pexels.com/photos/1100419/pexels-photo-1100419.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "date_post": [2021, 5, 17],
+            "category_type": "lifestyle",
+            "email": "mel@ubermelon.com"
+        },
+        {
+            "title": "Build Me Up, Melon Cup",
+            "summary": "A delicious and refreshing breakfast to get you going in the morning.",
+            "article_text": "What was I thinking? In my kids’ entire lives, I have never served them cantaloupe with cottage cheese (and mint in this case).|Could it be that the combination has fallen a bit out of fashion? But I love the blend of creamy, salty cottage cheese with the sweet juicy cantaloupe. In my mind, it’s a practically perfect breakfast.|Committed to remedying this parental omission, I decided to take it even further–I’d add mint! After the delicious addition mint to a recent watermelon feta salad, I figured mint would complement cantaloupe too. They’re both melons after all.",
+            "external_link": "",
+            "picture_link": "https://artofnaturalliving.com/wp-content/uploads/2019/09/Cantaloupe_Mint_Drizzle_07.jpg",
+            "date_post": [2021, 5, 18],
+            "category_type": "recipe",
+            "email": "meli@ubermelon.com"
         }
     ],
     "comments": [
         {
-            "comment_text": "placeholder"
+            "title": "Melon Fashion: Taking Inspiring from Nature",
+            "email": "mandi@moose.com",
+            "comment_text": "Buying now!!!"
         }
     ]
 }
