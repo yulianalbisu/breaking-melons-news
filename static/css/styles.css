@@ -1,0 +1,9 @@
+.carousel-div::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(141, 131, 138, 0.493);
+  }
