@@ -29,7 +29,7 @@ def get_news():
     return jsonify(news_list)
 
 
-
+# Hello friends, this is a test for merging 
 
 if __name__ == '__main__':
     connect_to_db(app)
