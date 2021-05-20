@@ -11,3 +11,17 @@
   .about-img {
     border-radius: 50%;
   }
+
+  .card-hidden {
+    visibility: hidden;
+  }
+
+  .card-visible {
+    background: white;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    visibility: visible;
+    animation: zoomIn;
+    animation-duration: 2s;
+  }

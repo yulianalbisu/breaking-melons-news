@@ -10,6 +10,8 @@ const NewsCarousel = ({news}) => {
     
     const months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
+
+
     return (
          <Carousel activeIndex={index} onSelect={handleSelect}>
               {news.map((newsItem, newsIndex) => (
