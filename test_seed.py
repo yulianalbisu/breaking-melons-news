@@ -3,9 +3,7 @@
 import os
 import json
 from random import choice, randint
-
-from sqlalchemy.sql.sqltypes import DateTime
-
+from datetime import DateTime
 import crud
 import model
 import server
