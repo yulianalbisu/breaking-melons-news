@@ -19,17 +19,18 @@ const App = () => {
       });
   }, []);
 
-
-
-                  {/* <CarouselItem
-                key={newsIndex}
-                newsItem={newsItem}
-                /> */}
   return (
   <BrowserRouter>
     <Container>
       <Navbar bg="light">
         <Navbar.Brand>
+            <img
+            alt=""
+            src="/static/images/watermelon.png"
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+          />{' '}
             <NavLink to="/">
             Breaking Melon News
             </NavLink>
