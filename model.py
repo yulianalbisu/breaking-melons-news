@@ -101,7 +101,7 @@ class External_News(db.Model):
     external_news_id = db.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     direct_title = db.Column(db.String, nullable=False)
     direct_link = db.Column(db.String, nullable=False)
-    image: db.Column(db.String, nullable=False)
+    image = db.Column(db.String, nullable=False)
 
     def __repr__(self):
         return f'<External_News external_news_id={self.category_id} direct_title={self.direct_title}>'
