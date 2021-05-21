@@ -2,7 +2,7 @@ const { Container, Row, Col } = ReactBootstrap;
 
 const NewsArticle = ({ newsItem }) => {
     return (
-        <Containter>
+        <Container>
             <Row>
                 {newsItem.title}
             </Row>
@@ -24,6 +24,6 @@ const NewsArticle = ({ newsItem }) => {
                 </div>
                 )}
             </Row>
-        </Containter>
+        </Container>
     )
 }
