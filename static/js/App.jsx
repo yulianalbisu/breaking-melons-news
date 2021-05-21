@@ -4,8 +4,6 @@ const { useState, useEffect } = React;
 
 const App = () => {
 
-  
-
   const [news, setNews] = useState([]);
 
   const [externalNews, setExternalNews] = useState([]);
