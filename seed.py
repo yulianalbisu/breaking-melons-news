@@ -22,10 +22,17 @@ def example_data():
 
     f.close()
     
+    f2 = open('direct-link.json',)
+
+    direct_link_data = json.load(f2)
+
+    f2.close()
+
     model.Comment.query.delete()
     model.News.query.delete()
     model.User.query.delete()
     model.Category.query.delete()
+    model.External_News.query.delete()
 
     users_in_db = {}
     categories_in_db = {}
@@ -65,5 +72,13 @@ def example_data():
             news=news_in_db[comment['title']], 
             comment_text=comment['comment_text']
             )
+
+    for direct_link_item in direct_link_data:
+        crud.create_external_news(
+            direct_title=direct_link_item['direct_title'],
+            direct_link=direct_link_item['direct_link'],
+            image=direct_link_item['image']
+        )
+
 
 example_data()

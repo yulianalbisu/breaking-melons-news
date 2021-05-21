@@ -1,4 +1,4 @@
-from model import db, User, News, Comment, Category, connect_to_db
+from model import db, User, News, Comment, Category, External_News, connect_to_db
 
 
 ### USER ###
@@ -91,6 +91,24 @@ def update_category(category_id, new_data):
     db.session.commit()
     return Category.query.get(category_id)
 
+### EXTERNAL_NEWS ###
+def create_external_news(direct_title, direct_link, image):
+
+    external_news = External_News(direct_title=direct_title, direct_link=direct_link, image=image)
+    db.session.add(external_news)
+    db.session.commit()
+    return external_news
+
+def get_external_news():
+    return External_News.query.all()
+
+def get_external_news_by_id(external_news_id):
+    return External_News.query.get(external_news_id)
+
+def update_external_news(external_news_id, new_data):
+    External_News.query.filter_by(external_news_id=external_news_id).update(new_data)
+    db.session.commit()
+    return External_News.query.get(external_news_id)
 
 if __name__ == '__main__':
     from server import app
