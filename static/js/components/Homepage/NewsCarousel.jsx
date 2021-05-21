@@ -1,12 +1,18 @@
 const { Container, Row, Col, Carousel } = ReactBootstrap;
 const { useState } = React;
+const { useHistory } = ReactRouterDOM;
 const NewsCarousel = ({news, viewNews}) => {
 
     const [index, setIndex] = useState(0);
-
+    let history = useHistory();
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
     };
+
+    const handleClickArticle = (news) => {
+      viewNews(news)
+      history.push(`/articles/${news.news_id}`)
+    }
     
     const months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
@@ -35,7 +41,7 @@ const NewsCarousel = ({news, viewNews}) => {
                         alt={newsItem.summary}
                         />
                         <Carousel.Caption>
-                          <h3 className='carousel-item-title'>{newsItem.title}</h3>
+                          <h3 className='carousel-item-title'><a onClick={() => handleClickArticle(news)} href="#">{newsItem.title}</a></h3>
                           <p>{newsItem.summary}</p>
                         </Carousel.Caption>
                       </Col>
