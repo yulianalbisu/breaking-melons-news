@@ -28,8 +28,17 @@ def get_news():
         news_list.append(news.to_dict())
     return jsonify(news_list)
 
+### EXTERNAL NEWS ###
 
-# Hello friends, this is a test for merging 
+@app.route('/api/external-news')
+def get_external_news():
+    """Gets list of external news entries."""
+    external_news_data = crud.get_news()
+    external_news_list = []
+    for news in external_news_data:
+        external_news_list.append(news.to_dict())
+    return jsonify(external_news_list)
+
 
 if __name__ == '__main__':
     connect_to_db(app)

@@ -93,7 +93,27 @@ class Category(db.Model):
             'category_type': self.category_type,
             'description': self.description
         }
-        
+
+class External_News(db.Model):
+
+    __tablename__ = 'external_news'
+
+    external_news_id = db.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    direct_title = db.Column(db.String, nullable=False)
+    direct_link = db.Column(db.String, nullable=False)
+    image: db.Column(db.String, nullable=False)
+
+    def __repr__(self):
+        return f'<External_News external_news_id={self.category_id} direct_title={self.direct_title}>'
+
+    def to_dict(self):
+        return {
+            'external_news_id': self.external_news_id,
+            'direct_title': self.direct_title,
+            'direct_link': self.direct_link,
+            'image': self.image
+        }
+
 def connect_to_db(flask_app, db_uri='postgresql:///testmelonnews', echo=True):
     flask_app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
     flask_app.config['SQLALCHEMY_ECHO'] = echo
