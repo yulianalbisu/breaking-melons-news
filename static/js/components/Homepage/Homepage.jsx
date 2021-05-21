@@ -1,12 +1,7 @@
 const { Container, Row, Col } = ReactBootstrap;
 
-const Homepage=({news, externalNews}) => {
+const Homepage=({news, externalNews, viewNews}) => {
 
-    const catMelon = {
-        title: "Why Does My Cat Like Canteloupe?",
-        image: "https://www.farmersalmanac.com/wp-content/uploads/2020/11/cat-cantaloupe.jpeg",
-        externalLink: "https://www.farmersalmanac.com/why-does-my-cat-like-cantaloupe-22108"
-    }
 
     return (
         <Container>
@@ -14,6 +9,7 @@ const Homepage=({news, externalNews}) => {
             <Col>
                 <NewsCarousel
                 news={news}
+                viewNews={viewNews}
                 />
             </Col>
 

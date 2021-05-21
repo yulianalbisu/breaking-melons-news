@@ -10,6 +10,8 @@ const App = () => {
 
   const [externalNews, setExternalNews] = useState([]);
 
+  const [selectedNews, setSelectedNews] = useState({});
+ 
   useEffect(() => {
     fetch("/api/news", {
       method: "GET",
@@ -28,6 +30,10 @@ const App = () => {
           console.error("Error:", error);
       });
   }, []);
+
+  const viewNews = newsItem => {
+    setSelectedNews(newsItem)
+  }
 
   return (
   <BrowserRouter>
@@ -54,10 +60,14 @@ const App = () => {
             <Homepage 
             news={news}
             externalNews={externalNews}
+            viewNews={viewNews}
             />
           </Route>
           <Route path="/about-us">
             <AboutUs />
+          </Route>
+          <Route path="/article/:articleId">
+            <NewsArticle newsItem={selectedNews} />
           </Route>
       </Switch> 
     </Container>

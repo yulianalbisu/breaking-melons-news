@@ -1,6 +1,6 @@
 const { Container, Row, Col, Carousel } = ReactBootstrap;
 const { useState } = React;
-const NewsCarousel = ({news}) => {
+const NewsCarousel = ({news, viewNews}) => {
 
     const [index, setIndex] = useState(0);
 
