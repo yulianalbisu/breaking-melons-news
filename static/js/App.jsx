@@ -66,7 +66,7 @@ const App = () => {
           <Route path="/about-us">
             <AboutUs />
           </Route>
-          <Route path="/article/:articleId">
+          <Route path="/articles/:articleId">
             <NewsArticle newsItem={selectedNews} />
           </Route>
       </Switch> 
