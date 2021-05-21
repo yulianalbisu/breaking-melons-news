@@ -33,7 +33,7 @@ def get_news():
 @app.route('/api/external-news')
 def get_external_news():
     """Gets list of external news entries."""
-    external_news_data = crud.get_news()
+    external_news_data = crud.get_external_news()
     external_news_list = []
     for news in external_news_data:
         external_news_list.append(news.to_dict())

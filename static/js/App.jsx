@@ -8,6 +8,8 @@ const App = () => {
 
   const [news, setNews] = useState([]);
 
+  const [externalNews, setExternalNews] = useState([]);
+
   useEffect(() => {
     fetch("/api/news", {
       method: "GET",
@@ -16,6 +18,14 @@ const App = () => {
       .then((newsData) => setNews(newsData))
       .catch((error) => {
         console.error("Error:", error);
+      });
+    fetch("/api/external-news", {
+        method: "GET",
+      })
+        .then((response) => response.json())
+        .then((externalNewsData) => setExternalNews(externalNewsData))
+        .catch((error) => {
+          console.error("Error:", error);
       });
   }, []);
 
@@ -43,6 +53,7 @@ const App = () => {
           <Route exact path="/">
             <Homepage 
             news={news}
+            externalNews={externalNews}
             />
           </Route>
           <Route path="/about-us">

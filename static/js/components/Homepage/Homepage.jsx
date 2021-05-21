@@ -1,6 +1,6 @@
 const { Container, Row, Col } = ReactBootstrap;
 
-const Homepage=({news}) => {
+const Homepage=({news, externalNews}) => {
 
     const catMelon = {
         title: "Why Does My Cat Like Canteloupe?",
@@ -19,11 +19,13 @@ const Homepage=({news}) => {
 
             </Row>
             <Row>
-            <Col>
-                <NewsCard
-                catMelon={catMelon}
-                />
-            </Col>
+                {externalNews.map(newsItem =>
+                    <Col key={newsItem.external_news_id} xs={3}>
+                        <NewsCard
+                        newsItem={newsItem}
+                        />
+                    </Col>
+                )}
             </Row>
 
         </Container>
