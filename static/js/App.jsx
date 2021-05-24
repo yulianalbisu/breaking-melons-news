@@ -35,7 +35,7 @@ const App = () => {
 
   return (
   <BrowserRouter>
-    <Container>
+    <div>
       <Navbar bg="light">
         <Navbar.Brand>
             <img
@@ -68,7 +68,7 @@ const App = () => {
             <NewsArticle newsItem={selectedNews} />
           </Route>
       </Switch> 
-    </Container>
+    </div>
     </BrowserRouter>
   );
 };
