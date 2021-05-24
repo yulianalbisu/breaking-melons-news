@@ -4,9 +4,9 @@ const Homepage=({news, externalNews, viewNews}) => {
 
 
     return (
-        <Container>
+        <Container fluid>
             <Row>
-            <Col>
+            <Col xs={{ span: 10, offset: 1 }}>
                 <NewsCarousel
                 news={news}
                 viewNews={viewNews}
@@ -14,16 +14,18 @@ const Homepage=({news, externalNews, viewNews}) => {
             </Col>
 
             </Row>
-            <Row>
-                {externalNews.map(newsItem =>
-                    <Col key={newsItem.external_news_id} xs={3}>
+            <Container>
+            <Row className="d-flex justify-content-center">
+                {externalNews.map((newsItem, newsInd) =>
+                    <Col key={newsItem.external_news_id} xs={7} md={5} lg={4} xl={3} className="ml-4" >
                         <NewsCard
+                        newsInd={newsInd}
                         newsItem={newsItem}
                         />
                     </Col>
                 )}
             </Row>
-
+            </Container>
         </Container>
     );
 };

@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  min-height: 100%;
+  background: linear-gradient(180deg, #a8e7daa9 ,#92aa7c9c );
+  width: 100%;
+}
+
 .carousel-div::before {
     content: "";
     position: absolute;
@@ -16,6 +23,18 @@
 
   .card-hidden {
     visibility: hidden;
+  }
+
+  .card-image {
+    object-fit: fill;
+  }
+
+  .big-news-image {
+    height: 300px;
+  }
+
+  .small-news-image {
+    height: 175px;
   }
 
   .card-visible {
@@ -38,6 +57,20 @@
     border-left-color: rgba(0, 128, 0, 0.774);
     border-right-color: rgba(0, 128, 0, 0.774);
     border-width: 10px;
+  }
+
+  .big-news-card {
+    height: 300px;
+  }
+
+  .small-news-card {
+    height: 175px;
+  }
+
+  .news-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 3px 13px 2px rgb(37 37 37);
   }
 
   .card-link {
