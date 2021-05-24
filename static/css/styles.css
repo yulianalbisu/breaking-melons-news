@@ -19,13 +19,32 @@
   }
 
   .card-visible {
-    background: white;
-    color: black;
+    background: rgb(228, 89, 71, 0.9);
     text-align: center;
-    font-size: 2em;
+    font-size: 1.2em;
     visibility: visible;
     animation: zoomIn;
     animation-duration: 2s;
+    align-items: center;
+    display: flex;
+    margin: 6px;
+    height: 15vh;
+    border-bottom-right-radius: 40vw;
+    border-bottom-left-radius: 40vw;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-color: rgba(0, 128, 0, 0.774);
+    border-left-color: rgba(0, 128, 0, 0.774);
+    border-right-color: rgba(0, 128, 0, 0.774);
+    border-width: 10px;
+  }
+
+  .card-link {
+    color: white;
+    text-align: center;
+    display: block;
+    margin: auto;
   }
   .padding-name {
     padding-top: 3vh;
