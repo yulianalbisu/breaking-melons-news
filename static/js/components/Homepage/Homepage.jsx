@@ -4,7 +4,7 @@ const Homepage=({news, externalNews, viewNews}) => {
 
 
     return (
-        <Container fluid>
+        <Container fluid className="homepage-container">
             <Row>
             <Col xs={{ span: 10, offset: 1 }}>
                 <NewsCarousel
