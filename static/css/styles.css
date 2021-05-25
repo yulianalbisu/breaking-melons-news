@@ -3,6 +3,8 @@ body {
   min-height: 100%;
   background: linear-gradient(180deg, #a8e7daa9 ,#92aa7c9c );
   width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: initial;
 }
 
 .carousel-div::before {
@@ -109,5 +111,21 @@ body {
   }
   .carousel-block {
     position: absolute;
-    z-index: 50;
+    
   }
+  .carousel-date-div {
+    background-color: rgba(255, 255, 255, 0.76);
+    box-shadow: 2px 3px 13px 2px rgb(37 37 37);
+    padding: 3px;
+    margin-top: 10px;  
+  }
+  .carousel-inner-date {
+    display:flex;
+    justify-content: center;
+  }
+  .carousel-picture {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+  }
+  
