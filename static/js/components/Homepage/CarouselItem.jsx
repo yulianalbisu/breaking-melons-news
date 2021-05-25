@@ -17,17 +17,17 @@ const CarouselItem = ({newsItem, viewNews}) => {
                     <Row>
                       <Col xs={1}>
                         <div className='carousel-date-div'>
-                          <div>
+                          <div className='carousel-inner-date'>
                               {new Date(newsItem.date_post).getDate() + 1}
                           </div>
-                          <div>
+                          <div className='carousel-inner-date'>
                               {months[new Date(newsItem.date_post).getMonth()]}
                           </div>
                         </div>
                       </Col>
                       <Col xs={10}>
-                        <img
-                        className="d-block w-100"
+                        <img 
+                        className="d-block w-100 carousel-picture"
                         src={newsItem.picture_link}
                         alt={newsItem.summary}
                         />
