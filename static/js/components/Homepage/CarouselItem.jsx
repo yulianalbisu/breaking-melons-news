@@ -32,7 +32,7 @@ const CarouselItem = ({newsItem, viewNews}) => {
                         alt={newsItem.summary}
                         />
                         <div>
-                          <h3 className='carousel-item-title'><a onClick={() => handleClickArticle(newsItem)} href="#">{newsItem.title}</a></h3>
+                          <h3 className='carousel-item-title'><a onClick={() => handleClickArticle(newsItem)} href="#" className="carousel-link">{newsItem.title}</a></h3>
                           <p>{newsItem.summary}</p>
                         </div>
                       </Col>

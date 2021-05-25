@@ -36,7 +36,7 @@ const App = () => {
   return (
   <BrowserRouter>
     <div>
-      <Navbar bg="light">
+      <Navbar bg="light" className="melon-navbar">
         <Navbar.Brand>
             <img
             alt=""
@@ -45,11 +45,11 @@ const App = () => {
             height="30"
             className="d-inline-block align-top"
           />{' '}
-            <NavLink to="/">
+            <NavLink to="/" className="home-link">
             Breaking Melon News
             </NavLink>
           </Navbar.Brand>
-        <NavLink to="/about-us">
+        <NavLink to="/about-us" className="aboutus-link">
           About Us
           </NavLink>
         </Navbar>
