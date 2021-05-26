@@ -1,8 +1,10 @@
 body {
   margin: 0;
   min-height: 100%;
-  background: linear-gradient(180deg, #a8e7daa9 ,#92aa7c9c );
+  background: linear-gradient(180deg, #1c7f8d ,#92aa7c9c );
   width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: initial;
 }
 
 .carousel-div::before {
@@ -82,7 +84,7 @@ body {
   }
   .padding-name {
     padding-top: 3vh;
-    border-top:2px solid #16dee287;
+    border-top:2px solid #1c7f8d;
   }
 
   .title {
@@ -94,7 +96,7 @@ body {
 
   .subtitle {
     font-family: sans-serif;
-    color: rgb(156, 160, 152);
+    color: black;
     text-align: center;  
   }
   .about-us {
@@ -105,9 +107,80 @@ body {
 
   .par {
     font-family: sans-serif;
-    color: grey;
+    color: white;
   }
   .carousel-block {
     position: absolute;
-    z-index: 50;
+    
+  }
+  .carousel-date-div {
+    background-color: rgba(255, 255, 255, 0.76);
+    box-shadow: 2px 3px 13px 2px rgb(37 37 37);
+    padding: 3px;
+    margin-top: 10px;  
+  }
+  .carousel-inner-date {
+    display:flex;
+    justify-content: center;
+  }
+  .carousel-picture {
+    height: 60vh;
+    width: 60vw;
+    object-fit: cover;
+  }
+  
+  .carousel-caption-box {
+    background: rgba(0, 0, 0, 0.644);
+  }
+
+  .carousel-item-title {
+    font-weight: bold;
+  }
+
+  .article-style {
+    height: 75vh;
+    width: 75vw;
+  }
+
+  .image-article {
+    height: 60vh;
+    width: 60vw;
+    object-fit: cover;
+    border-radius: 3mm;
+    box-shadow: 2px 3px 13px 2px rgb(37 37 37);
+    margin: auto;
+  }
+  .title-article {
+    size: 9px;
+    color: rgb(240, 136, 9);
+    font-weight: 10px;
+    text-align: left;
+    text-shadow: black;
+  }
+  .autor-article {
+    size: 4px;
+    color: black;
+    font-style: italic;
+    text-align: left;
+  }
+  .date-box {
+    background-color: rgba(0, 0, 0, 0.562);
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    margin-right: 60px;
+  }
+  .date-article {
+    size: 4px;
+    color: white;
+    text-align: right;
+    font-weight: 600;
+  }
+  .article-placeholder {
+    margin-top: 35px;
+    size: 8px;
+    color: white;
+    font-weight: bold;
+    text-align: justify;
   }

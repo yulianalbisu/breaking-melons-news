@@ -1,7 +1,7 @@
 const { Container, Row, Col } = ReactBootstrap;
 const { useHistory } = ReactRouterDOM;
 
-const CarouselItem = ({newsItem, viewNews}) => {
+const CarouselItem = ({newsItem, viewNews, Carousel}) => {
 
     const months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
 
@@ -17,24 +17,24 @@ const CarouselItem = ({newsItem, viewNews}) => {
                     <Row>
                       <Col xs={1}>
                         <div className='carousel-date-div'>
-                          <div>
+                          <div className='carousel-inner-date'>
                               {new Date(newsItem.date_post).getDate() + 1}
                           </div>
-                          <div>
+                          <div className='carousel-inner-date'>
                               {months[new Date(newsItem.date_post).getMonth()]}
                           </div>
                         </div>
                       </Col>
                       <Col xs={10}>
-                        <img
-                        className="d-block w-100"
+                        <img 
+                        className="d-block w-100 carousel-picture"
                         src={newsItem.picture_link}
                         alt={newsItem.summary}
                         />
-                        <div>
-                          <h3 className='carousel-item-title'><a onClick={() => handleClickArticle(newsItem)} href="#" className="carousel-link">{newsItem.title}</a></h3>
+                        <Carousel.Caption className="carousel-caption-box">
+                          <h3 className='carousel-item-title'><a className='carousel-item-title-link' onClick={() => handleClickArticle(newsItem)} href="#" className="carousel-link">{newsItem.title}</a></h3>
                           <p>{newsItem.summary}</p>
-                        </div>
+                        </Carousel.Caption>
                       </Col>
                     </Row>
         </Container>
