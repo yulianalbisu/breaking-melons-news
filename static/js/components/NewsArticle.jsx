@@ -2,22 +2,22 @@ const { Container, Row, Col } = ReactBootstrap;
 
 const NewsArticle = ({ newsItem }) => {
     return (
-        <Container>
-            <Row>
-                {newsItem.title}
+        <Container className='article-style'>
+            <Row className='title-article'> 
+               <h1> {newsItem.title} </h1>         
             </Row>
             <Row>
-                <Col>
+                <Col className='autor-article'>
                     {newsItem.user_name}
                 </Col>
-                <Col>
+                <Col className='date-box date-article'>
                     {newsItem.date_post}
                 </Col>
             </Row>
             <Row>
-                <img src={newsItem.picture_link}/>
+                <img className='image-article' src={newsItem.picture_link}/>
             </Row>
-            <Row>
+            <Row className='article-placeholder'>
                 {newsItem.article_text.split("|").map((para, index) => 
                 <div key={index}>
                     {para}

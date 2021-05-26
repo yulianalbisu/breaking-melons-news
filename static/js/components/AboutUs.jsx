@@ -34,8 +34,8 @@ const AboutUs = () => {
                 </Col>
             </Row>
             <Row>
-                <Col xs={{ span:4, offset:4 }}>
-                    <img className="about-img" src="/static/images/catpic.jpg" alt="cat"/>
+                <Col xs={{ span:4, offset:5 }}>
+                    <img className="about-img" src="/static/images/catpic2.jpg" alt="cat"/>
                     <h5 className="padding-name title">Muffin</h5>
                     <h6 className="subtitle">Chief Fieldline Officer</h6>
                 </Col>
