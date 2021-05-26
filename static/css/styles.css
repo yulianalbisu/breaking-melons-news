@@ -1,7 +1,7 @@
 body {
   margin: 0;
   min-height: 100%;
-  background: linear-gradient(180deg, #a8e7daa9 ,#92aa7c9c );
+  background: linear-gradient(180deg, #1c7f8d ,#92aa7c9c );
   width: 100%;
   font-family: 'Roboto', sans-serif;
   font-weight: initial;
@@ -84,7 +84,7 @@ body {
   }
   .padding-name {
     padding-top: 3vh;
-    border-top:2px solid #16dee287;
+    border-top:2px solid #1c7f8d;
   }
 
   .title {
@@ -96,7 +96,7 @@ body {
 
   .subtitle {
     font-family: sans-serif;
-    color: rgb(156, 160, 152);
+    color: black;
     text-align: center;  
   }
   .about-us {
@@ -107,7 +107,7 @@ body {
 
   .par {
     font-family: sans-serif;
-    color: grey;
+    color: white;
   }
   .carousel-block {
     position: absolute;
@@ -129,3 +129,11 @@ body {
     object-fit: cover;
   }
   
+  .carousel-caption-box {
+    background: rgba(0, 0, 0, 0.644);
+  }
+
+  .carousel-item-title {
+    font-weight: bold;
+  }
+
