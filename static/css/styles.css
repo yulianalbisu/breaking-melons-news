@@ -137,3 +137,50 @@ body {
     font-weight: bold;
   }
 
+  .article-style {
+    height: 75vh;
+    width: 75vw;
+  }
+
+  .image-article {
+    height: 60vh;
+    width: 60vw;
+    object-fit: cover;
+    border-radius: 3mm;
+    box-shadow: 2px 3px 13px 2px rgb(37 37 37);
+    margin: auto;
+  }
+  .title-article {
+    size: 9px;
+    color: rgb(240, 136, 9);
+    font-weight: 10px;
+    text-align: left;
+    text-shadow: black;
+  }
+  .autor-article {
+    size: 4px;
+    color: black;
+    font-style: italic;
+    text-align: left;
+  }
+  .date-box {
+    background-color: rgba(0, 0, 0, 0.562);
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    margin-right: 60px;
+  }
+  .date-article {
+    size: 4px;
+    color: white;
+    text-align: right;
+    font-weight: 600;
+  }
+  .article-placeholder {
+    margin-top: 15px;
+    size: 8px;
+    color: white;
+    font-weight: bold;
+    text-align: justify;
+  }
