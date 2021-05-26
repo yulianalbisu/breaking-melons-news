@@ -12,7 +12,7 @@ const NewsCarousel = ({news, viewNews}) => {
          <Carousel activeIndex={index} onSelect={handleSelect}>
               {news.map((newsItem, newsIndex) => (
                 <Carousel.Item key={newsIndex}>
-                  <CarouselItem newsItem={newsItem} viewNews={viewNews}/>
+                  <CarouselItem newsItem={newsItem} viewNews={viewNews} Carousel={Carousel}/>
                 </Carousel.Item>
               ))}
             </Carousel>
