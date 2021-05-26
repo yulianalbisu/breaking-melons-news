@@ -10,8 +10,8 @@ const NewsArticle = ({ newsItem }) => {
                 <Col className='autor-article'>
                     {newsItem.user_name}
                 </Col>
-                <Col className='date-box date-article'>
-                    {newsItem.date_post}
+                <Col xs={2} className='date-box date-article'>
+                    {newsItem.date_post.slice(0,-13)}
                 </Col>
             </Row>
             <Row>

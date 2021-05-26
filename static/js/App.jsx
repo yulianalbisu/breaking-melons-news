@@ -36,7 +36,7 @@ const App = () => {
   return (
   <BrowserRouter>
     <div>
-      <Navbar bg="light" className="melon-navbar">
+      <Navbar bg="light" className="melon-navbar" sticky='top'>
         <Navbar.Brand>
             <img
             alt=""
