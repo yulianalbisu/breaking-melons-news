@@ -6,15 +6,19 @@ import model
 import server
 import json
 
+os.system('dropdb testmelonnews')
+os.system('createdb testmelonnews')
 
+model.connect_to_db(server.app)
+model.db.create_all()
+
+model.Comment.query.delete()
+model.News.query.delete()
+model.User.query.delete()
+model.Category.query.delete()
+model.External_News.query.delete()
 
 def example_data():
-
-    os.system('dropdb testmelonnews')
-    os.system('createdb testmelonnews')
-
-    model.connect_to_db(server.app)
-    model.db.create_all()
 
     f = open('seeddata.json',)
 
@@ -27,12 +31,6 @@ def example_data():
     direct_link_data = json.load(f2)
 
     f2.close()
-
-    model.Comment.query.delete()
-    model.News.query.delete()
-    model.User.query.delete()
-    model.Category.query.delete()
-    model.External_News.query.delete()
 
     users_in_db = {}
     categories_in_db = {}
