@@ -22,23 +22,23 @@ The application was made from web scrapping to fill the data inside the carousel
 
 ### Carousel
 Front and center when you hit the homepage is a carousel created using React Bootstrap, which displays the most recent stories from our top melon reporter Meli Mellen. There are also some articles by Mel Melitopolski. 
-![caption](/static/img/carousel.gif)
+![caption](/static/images/carousel.gif)
 
 ### Articles
 User can view a list of articles than can move with a carousel design and can be clicked to be redirect to the article wanted. These stories are retrieved from our PostgreSQL database, and sent to the front end as JSON using an endpoint, where the state is updated. Once updated, each carousel item is dynamically rendered, and the carousel movement is controlled via state.
-![App Screenshot](/static/img/articles.png)
+![App Screenshot](/static/images/articles.png)
 
 ### Link-Cards
 Below the carousel, we have React Bootstrap cards which are used to display external news links, pulled from a different table than our internal articles. These cards have animations created using the animate.css library to streamline the process. This is used in conjunction with React, with the class name on each melon div controlled by state. When a mouseover event triggers, the class is changed and along with it the corresponding css animation. When the mouseout event triggers, the state and thus the class is updated again, returning it to its original invisible state.
-![caption](/static/img/card.gif)
+![caption](/static/images/card.gif)
 
 ### About Us
 Back on the homepage, we also use React Router Dom to go to an About Us page, which features our team 
-![App Screenshot](/static/img/about-us.png)
+![App Screenshot](/static/images/about-us.png)
 
 ### The Newsfeed
 Carousel and cards together, making the melon news more interesting.
-![App Screenshot](/static/img/integration.png)
+![App Screenshot](/static/images/integration.png)
 
 ## Nice to have
 In a future sprint, we’d love to add the ability to create accounts and add comments to our articles. Once this was implemented, the next thing we’d like to add is the ability for our correspondents to post articles directly using their own accounts, distinguished from regular commenters with a specific role that is already built into the database. This would be more streamlined than adding directly to the database.
